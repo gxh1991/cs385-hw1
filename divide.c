@@ -32,17 +32,6 @@ void divide(int a, int b)
     printf(1,"\n");
 }
 
-int
-ctoi(char *s)
-{
-  int n;
-
-  n = 0;
-  while('0' <= *s && *s <= '9')
-    n = n*10 + *s++ - '0';
-  return n;
-}
-
 int main(int argc, char *argv[]) {
     if (argc != 3) {
         printf(1,"The division needs TWO arguments!");
